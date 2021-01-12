@@ -1,0 +1,74 @@
+.switch-2-fields, .switch-4-fields {
+    width: 380px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .switch-2-fields {
+    margin: auto;
+  }
+
+  @media(min-width: 860px) {
+    .switch-4-fields {
+      width: 800px;
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+
+  .switch-2-fields label:hover, .switch-4-fields label:hover {
+    cursor: pointer;
+  }
+  
+  .switch-2-fields label, .switch-4-fields label {
+    width: 10rem;
+    text-align: center;
+    padding: 0.3rem 0;
+    margin: 0.3rem 1rem;
+    display: inline;
+  }
+  
+  .switch-2-fields input, .switch-4-fields input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .switch-2-fields input:checked + label, .switch-4-fields input:checked + label {
+    background-color: var(--mainPink);
+  }
+  
+  .switch-title {
+    margin-bottom: 0;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .switch-title--wide {
+      max-width: 800px;
+  }
+  
+  .multi-switch-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    max-width: 850px;
+    justify-items: center;
+  }
+  
+  @media(min-width: 860px) {
+    .multi-switch-container {
+      grid-template-columns: auto auto;
+      margin: auto;
+    }
+  }
+  
+  .weight-switch-container {
+    max-width: 380px;
+    margin: auto;
+  }
+  
+  @media(min-width: 860px) {
+    .weight-switch-container {
+      max-width: 800px;
+    } 
+  }
