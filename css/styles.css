@@ -1,6 +1,14 @@
 @import "./base/_variables.css";
 @import "./modules/_switch.css";
 @import "./modules/_nav-buttons.css";
+@import "./modules/_pet-bio.css";
+
+@import "./stylesheets/_page-container.css";
+@import "./stylesheets/_nav.css";
+@import "./stylesheets/_global-menu.css";
+@import "./stylesheets/_common-items.css";
+@import "./stylesheets/_global-buttons.css";
+
 
   /* This is just for CodePen. */
 .form {
@@ -17,3 +25,15 @@ h2 {
   font-size: 18px;
   margin-bottom: 8px;
 }
+
+.page-container {
+  display: flex;
+  /* flex allows the "nav" and "pet-form" areas to lay side-by-side, 4:6 ratio */
+  width: 100vw;
+  height: 100vh;
+  min-height: 700px;
+  min-width: 680px;
+  /* margin: 0; */
+}
+
+

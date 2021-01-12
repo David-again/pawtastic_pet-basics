@@ -5,64 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
     <!-- Bootstrap script -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Alternative bootstrap scripts -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+    <div class="page-container">
+        <div class="nav">
 
+            <!-- <NavLogo /> -->
+            <div class="common-items__logo">
+                <img src="./images/logo-pawtastic.jpg" alt="Pawtastic Logo" />
+            </div>
 
+            <!-- <NavMenus /> -->
+            <div class="nav__menu-container">
+                <p class="nav__main-menu nav__main-menu--inactive">Human profile</p>
+                <p class="nav__main-menu nav__main-menu--active">Pet basics</p>
+                <p class="nav__main-menu nav__main-menu--inactive">Pet details</p>
+                <p class="nav__main-menu nav__main-menu--inactive">Confirm</p>
+            </div>
 
+            <!-- <NavBgndDog /> -->
+            <div class="nav__bgnd-img--bottom">
+                <img class="nav__bgnd-img--right" src="./images/dog_nav_grey_bk.jpg" alt="Dog Looking Up" />
+            </div>
 
-    <form class="form">
+            <!-- <NavGlobalSaveExit /> -->
+            <div class="global-menu__save-exit">
+                <p>Save and exit</p>
+            </div>
 
-        <div class="multi-switch-container">
-            <div class="container">
-                <p class="switch-title">Gender</p>
-                <div class="switch-2-fields">
-                    <input type="radio" id="gender-female" name="gender-switch" value="female" checked/>
-                    <label for="gender-female">Female</label>
-                    <input type="radio" id="gender-male" name="gender-switch" value="male" />
-                    <label for="gender-male">Male</label>
+        </div>
+
+        <div>
+            <form class="form">
+                <div class="pet-bio__headline">
+                    Yay, we love dogs! Give us the basics about your pup.
                 </div>
-            </div>
 
-            <div class="container">
-                <p class="switch-title">Sprayed or Neutered</p>
-                <div class="switch-2-fields">
-                    <input type="radio" id="sprayed-yes" name="sprayed-switch" value="yes" checked/>
-                    <label for="sprayed-yes">Female</label>
-                    <input type="radio" id="sprayed-no" name="sprayed-switch" value="no" />
-                    <label for="sprayed-no">Male</label>
+                <!-- beginning of input boxes -->
+                <div class="pet-bio__container">
+                    <div class="pet-bio__name">
+                        <label for="pet-name">Name</label>
+                        <input type="text" id="pet-name" name="pet-name" required minlength="4" placeholder="Pet's name">
+                    </div>
+
+                    <div class="pet-bio__photo">
+                        <label for="pet-photo">Select a file:</label>
+                        <input type="file" id="pet-photo" name="pet-photo">
+                    </div>
+
+                    <div class="pet-bio__breed">
+                        <label for="pet-breed">Breed</label>
+                        <input type="text" id="pet-breed" name="pet-breed" placeholder="Pet's breed">
+                    </div>
+
+                    <div class="pet-bio__birthday">
+                        <label for="pet-birthday">Birthday:</label>
+                        <input type="date" id="pet-birthday" name="pet-birthday">
+                    </div>
                 </div>
-            </div>
+                <!-- End of input boxes -->
+
+                <div class="multi-switch-container">
+                    <div class="container">
+                        <p class="switch-title">Gender</p>
+                        <div class="switch-2-fields">
+                            <input type="radio" id="gender-female" name="gender-switch" value="female" checked/>
+                            <label for="gender-female">Female</label>
+                            <input type="radio" id="gender-male" name="gender-switch" value="male" />
+                            <label for="gender-male">Male</label>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <p class="switch-title">Sprayed or Neutered</p>
+                        <div class="switch-2-fields">
+                            <input type="radio" id="sprayed-yes" name="sprayed-switch" value="yes" checked/>
+                            <label for="sprayed-yes">Yes</label>
+                            <input type="radio" id="sprayed-no" name="sprayed-switch" value="no" />
+                            <label for="sprayed-no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weight-switch-container">
+                    <p class="switch-title switch-title--wide">Weight</p>
+                    <div class="switch-4-fields">
+                        <input type="radio" id="weight-lt25" name="weight-switch" value="lt25" checked/>
+                        <label for="weight-lt25">0-25 lbs</label>
+                        <input type="radio" id="weight-lt50" name="weight-switch" value="lt50" />
+                        <label for="weight-lt50">25-50 lbs</label>
+                        <input type="radio" id="weight-lt100" name="weight-switch" value="lt100" />
+                        <label for="weight-lt100">50-100 lbs</label>
+                        <input type="radio" id="weight-100plus" name="weight-switch" value="gt100" />
+                        <label for="weight-100plus">100+ lbs</label>
+                    </div>
+                </div>
+
+                <div class="nav-buttons__nav-strip--bottom">
+                    <button type="button" class="btn btn-outline-secondary btn-lg">Back</button>
+                    <button type="button" class="btn btn-secondary btn-lg">Next</button>
+                </div>
+            </form>
         </div>
-
-        <div class="weight-switch-container">
-            <p class="switch-title switch-title--wide">Weight</p>
-            <div class="switch-4-fields">
-                <input type="radio" id="weight-lt25" name="weight-switch" value="lt25" checked/>
-                <label for="weight-lt25">0-25 lbs</label>
-                <input type="radio" id="weight-lt50" name="weight-switch" value="lt50" />
-                <label for="weight-lt50">25-50 lbs</label>
-                <input type="radio" id="weight-lt100" name="weight-switch" value="lt100" />
-                <label for="weight-lt100">50-100 lbs</label>
-                <input type="radio" id="weight-100plus" name="weight-switch" value="gt100" />
-                <label for="weight-100plus">100+ lbs</label>
-            </div>
-        </div>
-
-        <div class="nav-buttons__nav-strip--bottom">
-            <button type="button" class="btn btn-outline-secondary btn-lg">Back</button>
-            <button type="button" class="btn btn-secondary btn-lg">Next</button>
-        </div>
-
-    </form>
-
-
+    </div>
 </body>
 
 </html>

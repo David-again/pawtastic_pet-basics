@@ -1,0 +1,62 @@
+.pet-basics {
+  position: relative;
+  /* allows child elements to be relatively (or absolutely?) positioned */
+  background-color: #faeceb;
+  height: 100%;
+  width: 60%;
+  /* min-width: 700px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  font-family: Georgia, Times, "Times New Roman", serif, Helvetica, Arial,
+    sans-serif;
+  /* Cambria, Cochin,  */
+}
+
+/* .pet-basics__form {
+  background-color: green;
+  text-align: center;
+  margin: 20px auto;
+} */
+
+div.pet-basics__form {
+  display: block;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.pet-basics__headline {
+  font-size: 2.2rem;
+  text-align: center;
+  max-width: 440px;
+  margin: 20px auto;
+}
+
+.pet-basics__biodata-group {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.pet-basics__biodata-left-col {
+  margin: 15px;
+}
+
+.pet-basics__biodata-right-col {
+  margin: 15px;
+}
+/* .pet-form__nav-strip--bottom {
+  transferred to .global-buttons
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+} */
