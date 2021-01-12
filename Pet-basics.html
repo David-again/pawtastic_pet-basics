@@ -41,34 +41,35 @@
             </div>
 
         </div>
-        <div class="pet-basics">
 
+        <div>
             <form class="form">
-                <div class="pet-basics__headline">
+                <div class="pet-bio__headline">
                     Yay, we love dogs! Give us the basics about your pup.
                 </div>
 
                 <!-- beginning of input boxes -->
-                <div class="basic-data">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required minlength="4" placeholder="Pet's name">
-                </div>
+                <div class="pet-bio__container">
+                    <div class="pet-bio__name">
+                        <label for="pet-name">Name</label>
+                        <input type="text" id="pet-name" name="pet-name" required minlength="4" placeholder="Pet's name">
+                    </div>
 
-                <div class="basic-data">
-                    <label for="myfile">Select a file:</label>
-                    <input type="file" id="myfile" name="myfile">
-                </div>
+                    <div class="pet-bio__photo">
+                        <label for="pet-photo">Select a file:</label>
+                        <input type="file" id="pet-photo" name="pet-photo">
+                    </div>
 
-                <div class="basic-data">
-                    <label for="name">Breed</label>
-                    <input type="text" id="name" name="name" placeholder="Pet's breed">
-                </div>
+                    <div class="pet-bio__breed">
+                        <label for="pet-breed">Breed</label>
+                        <input type="text" id="pet-breed" name="pet-breed" placeholder="Pet's breed">
+                    </div>
 
-                <div class="basic-data">
-                    <label for="birthday">Birthday:</label>
-                    <input type="date" id="birthday" name="birthday">
+                    <div class="pet-bio__birthday">
+                        <label for="pet-birthday">Birthday:</label>
+                        <input type="date" id="pet-birthday" name="pet-birthday">
+                    </div>
                 </div>
-
                 <!-- End of input boxes -->
 
                 <div class="multi-switch-container">
@@ -86,9 +87,9 @@
                         <p class="switch-title">Sprayed or Neutered</p>
                         <div class="switch-2-fields">
                             <input type="radio" id="sprayed-yes" name="sprayed-switch" value="yes" checked/>
-                            <label for="sprayed-yes">Female</label>
+                            <label for="sprayed-yes">Yes</label>
                             <input type="radio" id="sprayed-no" name="sprayed-switch" value="no" />
-                            <label for="sprayed-no">Male</label>
+                            <label for="sprayed-no">No</label>
                         </div>
                     </div>
                 </div>

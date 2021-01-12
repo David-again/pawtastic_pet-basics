@@ -12,7 +12,7 @@
   @media(min-width: 860px) {
     .switch-4-fields {
       width: 800px;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: repeat(4, auto);
     }
   }
 
