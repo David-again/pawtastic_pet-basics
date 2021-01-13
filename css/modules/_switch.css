@@ -49,10 +49,13 @@
   }
   
   .multi-switch-container {
+    margin-bottom: 1.5rem;
     display: grid;
     grid-template-rows: auto auto;
     max-width: 850px;
     justify-items: center;
+    grid-gap: 1.5rem;
+    /* margin-top: 1.5rem; */
   }
   
   @media(min-width: 860px) {
@@ -64,7 +67,8 @@
   
   .weight-switch-container {
     max-width: 380px;
-    margin: auto;
+    /* margin: auto; */
+    margin: 0 auto 1.5rem;
   }
   
   @media(min-width: 860px) {

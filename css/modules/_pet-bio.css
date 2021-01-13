@@ -21,6 +21,7 @@
 }
 
 .pet-bio__container {
+    margin-bottom: 1.5rem;
     display: grid;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 
@@ -28,7 +29,7 @@
         "pet-photo"
         "pet-breed"
         "pet-birthday";
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
 }
 
 @media(min-width: 860px) {
