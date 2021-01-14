@@ -1,9 +1,14 @@
 .page-container {
-  display: flex;
+  /* background-color: yellow; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* overflow: hidden; */
+
+  /* display: flex; */
   /* flex allows the "nav" and "pet-form" areas to lay side-by-side, 4:6 ratio */
-  width: 100vw;
-  height: 100vh;
-  min-height: 700px;
-  min-width: 680px;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* min-height: 700px; */
+  /* min-width: 680px; */
   /* margin: 0; */
 }
