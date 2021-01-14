@@ -1,8 +1,11 @@
 .pet-bio__headline {
     /* font-size: 2.2rem; */
+    font-family: 'Crimson Pro', serif;
+    color: var(--deepGrey);
     text-align: center;
-    max-width: 350px;
-    margin: 20px auto;
+    max-width: 400px;
+    margin: 20px auto;    
+    padding: 0 16px;
 }
 
 .pet-bio__name label, .pet-bio__photo label, .pet-bio__breed label, .pet-bio__birthday label {
