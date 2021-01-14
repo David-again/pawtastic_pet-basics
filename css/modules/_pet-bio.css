@@ -1,27 +1,30 @@
 .pet-bio__headline {
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
     text-align: center;
-    max-width: 440px;
+    max-width: 350px;
     margin: 20px auto;
 }
 
 .pet-bio__name label, .pet-bio__photo label, .pet-bio__breed label, .pet-bio__birthday label {
+    color: var(--deepGrey);
     display: block;
+    margin-bottom: 8px;
 }
 
 .pet-bio__name input, .pet-bio__photo input, .pet-bio__breed input, .pet-bio__birthday input {
+    /* color: var(--deepPink); */
     width: 100%;
 }
 
 .pet-bio__name, .pet-bio__photo, .pet-bio__breed, .pet-bio__birthday {
-    width: 380px;
+    width: 220px;
     margin-left: auto;
     margin-right: auto;
-    /* margin: 1.5rem auto; */
 }
 
 .pet-bio__container {
-    margin-bottom: 1.5rem;
+    max-width: 480px;
+    margin: 0 auto 1.5rem;
     display: grid;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 
@@ -32,7 +35,7 @@
     grid-gap: 1.5rem;
 }
 
-@media(min-width: 860px) {
+@media(min-width: 640px) {
     .pet-bio__container {
         grid-template-rows: auto auto;
         grid-template-columns: auto auto;
