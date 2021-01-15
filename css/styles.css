@@ -17,7 +17,10 @@
 
 body {
   font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
-  background-color: red;
+  /* background-color: red; */
+  /* background-color: var(--backGrey); */
+  background-color: var(--deepGrey);
+  
   /* margin-top: auto;
   margin-bottom: auto; */
   /* background-color: var(--lightPink); */

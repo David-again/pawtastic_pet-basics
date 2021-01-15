@@ -1,7 +1,10 @@
 .page-container {
   /* background-color: yellow; */
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+
+  /* padding-top: 2rem;
+  padding-bottom: 2rem; */
+  
+  
   /* overflow: hidden; */
 
   /* display: flex; */
@@ -11,4 +14,11 @@
   /* min-height: 700px; */
   /* min-width: 680px; */
   /* margin: 0; */
+}
+
+@media(min-width: 1000px) {
+  .page-container {
+      display: flex;
+      flex-direction: row;
+  }
 }

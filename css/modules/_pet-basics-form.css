@@ -8,3 +8,9 @@
     /* margin-top: auto;
     margin-bottom: auto; */
 }
+
+@media(min-width: 1000px) {
+   .pet-basics-form {
+        width: 64%;
+    }
+}
