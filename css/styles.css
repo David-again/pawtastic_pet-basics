@@ -11,7 +11,6 @@
 @import "./stylesheets/_page-container.css";
 @import "./stylesheets/_nav.css";
 @import "./stylesheets/_global-menu.css";
-@import "./stylesheets/_common-items.css";
 @import "./stylesheets/_global-buttons.css";
 
 
@@ -20,7 +19,8 @@ body {
   /* background-color: red; */
   /* background-color: var(--backGrey); */
   background-color: var(--deepGrey);
-  
+  /* overflow: hidden; */
+
   /* margin-top: auto;
   margin-bottom: auto; */
   /* background-color: var(--lightPink); */
@@ -29,7 +29,9 @@ body {
 html {
   /* margin: 0;
   padding: 0; */
-  background-color: blue;
+  /* background-color: blue; */
+  background-color: var(--deepGrey);
+  /* overflow: hidden; */
 }
 
 /* body h2 { */

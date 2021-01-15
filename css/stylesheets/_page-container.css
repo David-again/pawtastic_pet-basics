@@ -6,6 +6,7 @@
   
   
   /* overflow: hidden; */
+  /* min-height: 100vh; */
 
   /* display: flex; */
   /* flex allows the "nav" and "pet-form" areas to lay side-by-side, 4:6 ratio */
@@ -20,5 +21,6 @@
   .page-container {
       display: flex;
       flex-direction: row;
+      /* overflow: hidden; */
   }
 }
