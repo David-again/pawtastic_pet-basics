@@ -1,0 +1,41 @@
+@import "./base/_fonts.css";
+@import "./base/_variables.css";
+@import "./modules/_switch-2-fields.css";
+@import "./modules/_switch-4-fields.css";
+@import "./modules/_nav-buttons.css";
+@import "./modules/_pet-bio.css";
+@import "./modules/_navbar.css";
+@import "./modules/_pet-basics-form.css";
+@import "./modules/_wrapper.css";
+
+@import "./stylesheets/_page-container.css";
+@import "./stylesheets/_nav.css";
+@import "./stylesheets/_global-menu.css";
+@import "./stylesheets/_common-items.css";
+@import "./stylesheets/_global-buttons.css";
+
+
+body {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  /* background-color: red; */
+  /* background-color: var(--backGrey); */
+  background-color: var(--deepGrey);
+  
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  /* background-color: var(--lightPink); */
+}
+
+html {
+  /* margin: 0;
+  padding: 0; */
+  background-color: blue;
+}
+
+/* body h2 { */
+  /* font-family: "Serif"; */
+  /* font-family: 'Crimson Text', serif; */
+  
+  /* font-weight: 700; */
+  /* color: red; */
+/* } */

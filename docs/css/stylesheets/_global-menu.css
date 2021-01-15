@@ -1,0 +1,8 @@
+.global-menu__save-exit {
+  position: absolute;
+  bottom: 45px;
+  left: 25%;
+  color: #dadbe7;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
