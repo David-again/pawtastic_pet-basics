@@ -3,28 +3,30 @@
     background-color: #fff;
     display: grid;
     grid-template-columns: auto auto;
-}
-  
-.switch-2-fields label {
-    width: 100px;
-    text-align: center;
-    padding: 5px 0;
-    margin: 5px;
-    /* display: inline; */
-}
 
-.switch-2-fields label:hover {
-    cursor: pointer;
+    & label {
+        width: 100px;
+        text-align: center;
+        padding: 5px 0;
+        margin: 5px;
+        /* display: inline; */
+    }
+
+    & label:hover {
+        cursor: pointer;
+    }
+    
+    & input {
+        position: absolute;
+        opacity: 0;
+    }
+    
+    & input:checked + label {
+        background-color: var(--mainPink);
+    } 
 }
   
-.switch-2-fields input {
-    position: absolute;
-    opacity: 0;
-}
-  
-.switch-2-fields input:checked + label {
-    background-color: var(--mainPink);
-}  
+ 
   
 .switch-title {
     color: var(--deepGrey);

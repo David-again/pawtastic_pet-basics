@@ -3,29 +3,29 @@
     background-color: #fff;
     display: grid;
     grid-template-columns: auto auto;
+
+    & label {
+        width: 100px;
+        text-align: center;
+        padding: 5px 0;
+        margin: 5px;
+        /* display: inline; */
+    }
+
+    & label:hover {
+        cursor: pointer;
+    }
+
+    & input {
+        position: absolute;
+        opacity: 0;
+    }
+      
+    & input:checked + label {
+        background-color: var(--mainPink);
+    }
 }
   
-.switch-4-fields label {
-    width: 100px;
-    text-align: center;
-    padding: 5px 0;
-    margin: 5px;
-    /* display: inline; */
-}
-
-.switch-4-fields label:hover {
-    cursor: pointer;
-}
-
-.switch-4-fields input {
-    position: absolute;
-    opacity: 0;
-}
-  
-.switch-4-fields input:checked + label {
-    background-color: var(--mainPink);
-}
-
 .weight-switch-container {
     width: 220px;
     /* margin: auto; */
@@ -33,12 +33,13 @@
   }
 
 @media(min-width: 640px) {
-    .weight-switch-container {
-      width: 480px;
-    }
     .switch-4-fields {
       width: 480px;
       grid-template-columns: repeat(4, auto);
       justify-items: center;
+    }
+    
+    .weight-switch-container {
+      width: 480px;
     }
   }
