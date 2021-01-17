@@ -1,0 +1,33 @@
+{
+    "name": "pawtastic_pet-basics",
+    "version": "1.0.0",
+    "description": "Got the idea from \"Daily UI Challenge\" screenshots of a hypothetical pet-grooming service.\r I am beginning with the registration page for the user's pet based on said screenshot (included in \"./images/prototypes/Screenshots/\").\r Next will be the registration page for the pet's owner.\r Finally a MongoDB database to store and link the details of both pet(s) and owner.",
+    "main": "webpack.config.js",
+    "scripts": {
+        "dev": "webpack serve",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/David-again/pawtastic_pet-basics.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/David-again/pawtastic_pet-basics/issues"
+    },
+    "homepage": "https://github.com/David-again/pawtastic_pet-basics#readme",
+    "dependencies": {
+        "autoprefixer": "^10.2.1",
+        "css-loader": "^5.0.1",
+        "postcss-import": "^14.0.0",
+        "postcss-loader": "^4.1.0",
+        "postcss-nested": "^5.0.3",
+        "postcss-simple-vars": "^6.0.2",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.15.0",
+        "webpack-cli": "^4.3.1",
+        "webpack-dev-server": "^3.11.2"
+    }
+}
