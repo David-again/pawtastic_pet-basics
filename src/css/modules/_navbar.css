@@ -30,9 +30,7 @@
 
 .navbar__menu-icon {
     position: absolute;
-    /* display: block;
-    visibility: visible; */
-    /* z-index: -11; */
+    /* display: block; visibility: visible; z-index: -11; */
 
     right: 15px;
     top: 50%;
@@ -67,6 +65,26 @@
     &--bottom {
         bottom: 0;
     }
+
+    &--close-x {
+        .navbar__menu-icon--top {
+            transform: rotate(45deg) scale(1.1);
+            transform-origin: top left;
+            transition: transform 0.4s ease-out;
+        }
+
+        .navbar__menu-icon--middle {
+            opacity: 0;
+            transform-origin: top left;
+            transition: all 0.4s ease-out;
+        }
+
+        .navbar__menu-icon--bottom {
+            transform: rotate(-45deg) scale(1.05);
+            transform-origin: bottom left;
+            transition: transform 0.4s ease-out;
+        }
+    }
 }
 
 @media(min-width: 1000px) {
@@ -89,13 +107,22 @@
     margin-right: 15px;
     position: relative;
     display: none;
-    /* Will be displayed using Javascript (upon clicking the Mobile-Menu icon) */
-    /* display: block; */
+
+    &--is-visible {
+        display: block;
+        /* Need to work on the animation of the menus here... or in Javascript */
+        transform: scale(0.3);
+        transform-origin: top;
+        transform: scale(1);
+        
+        transition: all 0.3s ease-out;
+    }
 }
 
 @media(min-width: 1000px) {
     .navbar__menu-container {
         display: block;
+        transform: scale(1);
     }
 }
 
@@ -110,6 +137,7 @@
         content: '';
         margin-right: 2em;
         position: absolute;
+        z-index: 1;
         left: 20px;
         width: 20px; height: 20px;
         background-color: var(--mainGrey);
@@ -127,6 +155,7 @@
         left: 15px;
         width: 32px; height: 32px;
         border: 7px solid #fff;
+        background-color: var(--deepGrey);
         border-radius: 15px;
     }
 
@@ -149,6 +178,14 @@
     /* .navbar__menu-item--save-exit {
         bottom: 30px; 
     } */
+}
+
+.navbar__menu-vertical-line {
+    border-left: 2px solid var(--mainGrey);
+    height: 170px;
+    position: absolute;
+    top: 55px; 
+    left: 30px;
 }
 
 .navbar__dog-img {
