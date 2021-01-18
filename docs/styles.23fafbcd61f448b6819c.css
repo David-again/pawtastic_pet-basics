@@ -1,0 +1,415 @@
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@800&display=swap);
+
+/* "Crimson Pro" is used inside _pet-bio.css for h1.pet-bio__headline */
+/* @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap'); */
+:root {
+    --lightPink: #FAECEB;
+    --mediumPink: #E9DBDA;
+    --mainPink: #F1CFCD;
+    --deepPink: #C37D7B;
+
+    --lightGrey: #F1F1F9;
+    --mediumGrey: #DBDBE7;
+    --mainGrey: #9497A8;
+    --deepGrey: #535973;
+    --deepGreyRGB: 83, 89, 115;
+    
+    --backGrey: #626882;
+}
+.page-container {
+  /* overflow: hidden; */
+  /* min-height: 100vh; */
+
+  /* width: 100vw; */
+  /* height: 100vh; */
+}
+@media(min-width: 1000px) {
+  .page-container {
+      display: flex;
+      flex-direction: row;
+      /* overflow: hidden; */
+  }
+}
+.wrapper {
+    padding-top: 50px;
+    /* padding-left: 2.5rem;
+    padding-right: 2.5rem; */
+}
+.switch-2-fields {
+    max-width: 220px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: auto auto; 
+}
+.switch-2-fields label {
+        width: 100px;
+        text-align: center;
+        padding: 5px 0;
+        margin: 5px;
+        /* display: inline; */
+    }
+.switch-2-fields label:hover {
+        cursor: pointer;
+    }
+.switch-2-fields input {
+        position: absolute;
+        opacity: 0;
+    }
+.switch-2-fields input:checked + label {
+        background-color: var(--mainPink);
+    }
+.switch-title {
+    color: var(--deepGrey);
+    margin-bottom: 8px;
+    max-width: 220px;
+}
+@media(min-width: 640px) {
+    .switch-title--wide {
+        max-width: 450px;
+    }
+}
+.multi-switch-container {
+    width: 220px;
+    margin: 0 auto 1.5rem;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 1.5rem;
+    /* justify-items: center; */
+}
+@media(min-width: 640px) {
+    .multi-switch-container {
+      width: 480px;
+      grid-template-columns: auto auto;
+      margin-bottom: 0;
+    }
+}
+.switch-4-fields {
+    width: 220px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.switch-4-fields label {
+        width: 100px;
+        text-align: center;
+        padding: 5px 0;
+        margin: 5px;
+        /* display: inline; */
+    }
+.switch-4-fields label:hover {
+        cursor: pointer;
+    }
+.switch-4-fields input {
+        position: absolute;
+        opacity: 0;
+    }
+.switch-4-fields input:checked + label {
+        background-color: var(--mainPink);
+    }
+.weight-switch-container {
+    width: 220px;
+    /* margin: auto; */
+    margin: 0 auto 1.5rem;
+  }
+@media(min-width: 640px) {
+    .switch-4-fields {
+      width: 480px;
+      grid-template-columns: repeat(4, auto);
+      justify-items: center;
+    }
+    
+    .weight-switch-container {
+      width: 480px;
+    }
+  }
+.nav-buttons__backgnd {
+    background-color: #fff;
+}
+.nav-buttons__nav-strip--bottom {
+    min-width: 300px;
+    max-width: 480px;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin: 1rem; */
+}
+@media (min-width: 640px) {
+    .nav-buttons__nav-strip--bottom {
+        justify-content: space-between;
+    }
+}
+.btn-secondary {
+   min-width: 120px;
+   border-radius: 35px;
+   border: 1px solid rgba(134, 142, 150, 0.75);
+}
+.btn-outline-secondary {
+    min-width: 120px;
+    background-image: none;
+    border-radius: 35px;
+    border: 1px solid rgba(134, 142, 150, 0.75);     
+}
+.pet-bio__headline {
+    /* font-size: 2.2rem; */
+    font-family: 'Crimson Pro', serif;
+    color: var(--deepGrey);
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+.pet-bio__name label, .pet-bio__photo label, .pet-bio__breed label, .pet-bio__birthday label {
+    color: var(--deepGrey);
+    display: block;
+    margin-bottom: 8px;
+}
+.pet-bio__name input, .pet-bio__photo input, .pet-bio__breed input, .pet-bio__birthday input {
+    /* color: var(--deepPink); */
+    width: 100%;
+}
+.pet-bio__name, .pet-bio__photo, .pet-bio__breed, .pet-bio__birthday {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pet-bio__container {
+    max-width: 480px;
+    margin: 0 auto 1.5rem;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "pet-name"
+        "pet-photo"
+        "pet-breed"
+        "pet-birthday";
+    grid-gap: 1.5rem;
+}
+@media(min-width: 640px) {
+    .pet-bio__container {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+          "pet-name pet-photo"
+          "pet-breed pet-birthday";
+      }
+  }
+.pet-bio__name {
+    grid-area: pet-name;
+}
+.pet-bio__photo {
+    grid-area: pet-photo;
+}
+.pet-bio__breed {
+    grid-area: pet-breed;
+}
+.pet-bio__birthday {
+    grid-area: pet-birthday;
+}
+.navbar__backgnd {
+        background-color: var(--deepGrey);
+        position: fixed;
+        top:0;
+        height: 60px; width: 100%;
+    }
+.navbar__brand-img {
+        padding: 0 40px;
+        max-height: 60px;
+        width: auto;
+    }
+@media(min-width: 1000px) {
+        .navbar__backgnd {
+            position: static;
+            width: 36%;
+            height: 100vh;
+        }
+
+        .navbar__brand-img {
+            margin-top: 50px;
+            margin-left: 70px;
+        }
+}
+.navbar__menu-icon {
+    position: absolute;
+    /* display: block; visibility: visible; z-index: -11; */
+
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 40px;
+}
+.navbar__menu-icon:hover {
+        cursor: pointer;
+    }
+.navbar__menu-icon--top, .navbar__menu-icon--middle, .navbar__menu-icon--bottom {
+        width: 100%;
+        height: 8px;
+        position: absolute;
+        background-color: var(--mainGrey);
+        background-color: #fff;
+        border-radius: 4px;
+    }
+/* &--top:hover, &--middle:hover, &--bottom:hover { cursor: pointer; } */
+.navbar__menu-icon--top {
+        top: 0; 
+    }
+.navbar__menu-icon--middle {
+        top: 50%;
+        transform: translateY(-50%); 
+    }
+.navbar__menu-icon--bottom {
+        bottom: 0;
+    }
+.navbar__menu-icon--close-x .navbar__menu-icon--top {
+            transform: rotate(45deg) scale(1.1);
+            transform-origin: top left;
+            transition: transform 0.4s ease-out;
+        }
+.navbar__menu-icon--close-x .navbar__menu-icon--middle {
+            opacity: 0;
+            transform-origin: top left;
+            transition: all 0.4s ease-out;
+        }
+.navbar__menu-icon--close-x .navbar__menu-icon--bottom {
+            transform: rotate(-45deg) scale(1.05);
+            transform-origin: bottom left;
+            transition: transform 0.4s ease-out;
+        }
+@media(min-width: 1000px) {
+    .navbar__menu-icon {
+        /* position: static;
+        display: none;
+        visibility: hidden; */
+
+        z-index: -1;
+    }
+}
+.navbar__menu-container {
+    /* background-color: red; */
+    /* background-color: var(--deepGrey); */
+    background-color: rgba(var(--deepGreyRGB), 0.93);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 15px;
+    position: relative;
+    display: none;
+}
+.navbar__menu-container--is-visible {
+        display: block;
+        /* Need to work on the animation of the menus here... or in Javascript */
+        transform: scale(0.3);
+        transform-origin: top;
+        transform: scale(1);
+        transition: all 0.3s ease-out;
+    }
+@media(min-width: 1000px) {
+    .navbar__menu-container {
+        display: block;
+        transform: scale(1);
+    }
+}
+.navbar__menu-item {
+    margin: 32px 0 32px 64px;
+}
+.navbar__menu-item--inactive {
+        color: var(--mainGrey)
+    }
+.navbar__menu-item--inactive::before {
+        content: '';
+        margin-right: 2em;
+        position: absolute;
+        z-index: 1;
+        left: 20px;
+        width: 20px; height: 20px;
+        background-color: var(--mainGrey);
+        border-radius: 10px;
+    }
+.navbar__menu-item--active {
+        color: #fff;
+    }
+.navbar__menu-item--active::before {
+        content: ' ';
+        margin-right: 2em;
+        position: absolute;
+        left: 15px;
+        width: 32px; height: 32px;
+        border: 7px solid #fff;
+        background-color: var(--deepGrey);
+        border-radius: 15px;
+    }
+.navbar__menu-item--save-exit {
+        position: absolute;
+        margin: 0 0 0 32px;
+        padding: 5px;
+        color: #fff;
+        text-decoration: underline;
+    }
+.navbar__menu-item--save-exit:hover {
+        background-color: #fff;
+        color: var(--deepGrey);
+        font-weight: bold;
+    }
+@media(min-width: 1000px) {
+    /* .navbar__menu-item--save-exit {
+        bottom: 30px; 
+    } */
+}
+.navbar__menu-vertical-line {
+    border-left: 2px solid var(--mainGrey);
+    height: 170px;
+    position: absolute;
+    top: 55px; 
+    left: 30px;
+}
+.navbar__dog-img {
+    display: none;
+    /* margin: 0 auto; */
+    margin-left: 40px;
+}
+@media(min-width: 1000px) {
+    .navbar__dog-img {
+        display: inline-block;
+        /* margin: 0 auto; */
+        /* margin-left: 40px; */
+    }
+}
+.pet-basics-form {
+    background-color: var(--lightPink);
+    /* height: auto;
+    margin: 0; */
+    /* height: 100%; */
+    /* margin: auto; */
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    min-width: 300px;
+    min-height: 100vh;
+}
+@media(min-width: 1000px) {
+   .pet-basics-form {
+        width: 64%;
+    }
+}
+/* @import "./stylesheets/_nav.css"; */
+body {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  /* font-family: Georgia, Times, "Times New Roman", serif, Helvetica, Arial */
+  /* background-color: red; */
+  /* background-color: var(--backGrey); */
+  background-color: var(--deepGrey);
+  /* overflow: hidden; */
+
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  /* background-color: var(--lightPink); */
+}
+html {
+  /* margin: 0;
+  padding: 0; */
+  /* background-color: blue; */
+  background-color: var(--deepGrey);
+  /* overflow: hidden; */
+}

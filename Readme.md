@@ -2,7 +2,8 @@
 ### A project I'm working on for a hypothetical pet-grooming agency.
 
 Got the idea from "Daily UI Challenge" screenshots of a hypothetical pet-grooming service.
-I am beginning with the registration page for the user's pet; (it is based on the screenshot found in "./images/prototypes/Screenshots/").
+I am beginning with the registration page for the user's pet; 
+(Refer to the screenshot found in "./src/images/prototypes/Screenshots/").
 
 Next will be the registration page for the pet's owner.
 Finally a MongoDB database to store and link the details of both pet(s) and owner.
@@ -11,7 +12,7 @@ From there, the project could possibly expand...
 
 Emphasis on a Mobile-first philosophy, make it accessible from small devices.
 
-If you're seeing this message, the project is still in development.  Feel free to check out the source code at https://github.com/David-again/pawtastic_pet-basics
+If you're seeing this message on the GitHub pages link, the project is still in development.  Feel free to check out the source code at https://github.com/David-again/pawtastic_pet-basics
 
 Come back soon! 😎
 
