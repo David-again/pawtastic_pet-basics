@@ -1,3 +1,3 @@
-function toggleTheMenu() {
-    console.log("The Menu Icon was clicked!");
-}
+// function toggleTheMenu() {
+//     console.log("Sabotaged by some remote function!");
+// }

@@ -114,7 +114,6 @@
         transform: scale(0.3);
         transform-origin: top;
         transform: scale(1);
-        
         transition: all 0.3s ease-out;
     }
 }
