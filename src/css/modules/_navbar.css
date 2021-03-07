@@ -171,6 +171,7 @@
         background-color: #fff;
         color: var(--deepGrey);
         font-weight: bold;
+        cursor: pointer;
     }
 }
 
