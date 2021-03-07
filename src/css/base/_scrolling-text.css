@@ -1,0 +1,9 @@
+.scrolling-text {
+    font-family:'Comic Sans MS';
+    font-size:1em;
+    line-height:1em;
+    color:#FF0000;
+    background-color:#FFFF00;
+    padding:0.5em;
+    margin-top: 1em;
+}

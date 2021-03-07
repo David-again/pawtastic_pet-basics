@@ -2,6 +2,7 @@
 @import "./base/_variables.css";
 @import "./base/_page-container.css";
 @import "./base/_wrapper.css";
+@import "./base/_scrolling-text.css";
 
 @import "./modules/_switch-2-fields.css";
 @import "./modules/_switch-4-fields.css";
